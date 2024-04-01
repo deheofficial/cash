@@ -144,18 +144,17 @@
               </div>
               <br>
               <div class="row">
+                      <div class="col-md-6">
+                        <label for="company">Company</label>
+                        <?php $options = getData4ListBox("company", array(), array(), array('company_name', 'ASC'), 'company_id', 'company_name');
+                              echo form_dropdown('ca_company',$options,$this->input->post('ca_company')?$this->input->post('ca_company'):$result->company, 'class="form-control" ');?>
+                      </div>
 
-                  <div class="form-group">
-                    <label for="company">Company</label>
-                    <?php $options = getData4ListBox("company", array(), array(), array('company_name', 'ASC'), 'company_id', 'company_name');
-                          echo form_dropdown('company_ca',$options,$this->input->post('company_ca')?$this->input->post('company_ca'):$result->company_ca, 'class="form-control" ');?>
-                  </div>
-
-                  <div class="form-group">
-                    <label for="category">Category</label>
+                      <div class="col-md-6">
+                        <label for="category">Category</label>
                     <?php $options = getData4ListBox("category", array(), array(), array('project_name', 'ASC'), 'project_id', 'project_name');
-                          echo form_dropdown('project_ca',$options,$this->input->post('project_ca')?$this->input->post('project_ca'):$result->category, 'class="form-control" ');?>
-                  </div>
+                          echo form_dropdown('ca_project',$options,$this->input->post('ca_project')?$this->input->post('ca_project'):$result->category, 'class="form-control" ');?>
+                      </div>
                       
                 </div>
                 <br><br>
