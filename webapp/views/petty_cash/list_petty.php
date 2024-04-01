@@ -68,7 +68,6 @@ else {
                     <th>requester</th>
                     <th>Request Date</th>
                     <th>Category</th>
-                    <th>Cash</th>
                     <th>Status</th>  
                     <th>Company</th>                                      
                     <th>Action</th>
@@ -112,7 +111,6 @@ else {
                         <td style="vertical-align: middle;"><?=strtoupper(getData("user_fname","users","user_id",$row->petty_user_id))?></td>
                         <td style="vertical-align: middle;"><?=$date?></td>
                         <td style="vertical-align: middle;"><?=strtoupper(getData("project_name","category","project_id",$row->category))?></td>
-                        <td style="vertical-align: middle;"><?=strtoupper($row->cash)?></td>
                         <td style="vertical-align: middle;"><?=(getData("status_desc","statuspc","status_id",$row->status))?></td>
                         <td style="vertical-align: middle;"><?=strtoupper(getData("company_name2","company","company_id",$row->company))?></td>
                         <td style="vertical-align: middle;"><?=$detail . " " . $check. " " . $edit. " " .$createvoucher  ?></td>
