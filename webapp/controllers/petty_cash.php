@@ -47,7 +47,7 @@ class Petty_cash extends CI_Controller{
 
         $this->template->write('titlesite', "Request Petty Cash");
 
-        $this->template->write_view('contentmodule1', "petty_cash/request_petty", $data);
+        $this->template->write_view('contentmodule1', "petty_cash/request_petty2", $data);
 
         $this->template->parse_template = TRUE;
 
