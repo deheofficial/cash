@@ -43,6 +43,8 @@
   <link rel="stylesheet" href="<?= base_url() ?>assets/template/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url() ?>assets/template/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 
+  <script src="<?= base_url() ?>assets/cash.js"></script>
+
   <script src="<?= base_url() ?>assets/template_login/js/main.js"></script>
 
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
