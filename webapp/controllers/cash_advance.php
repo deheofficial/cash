@@ -47,7 +47,7 @@ class Cash_advance extends CI_Controller{
 
         $this->template->write('titlesite', "Request Cash Advance");
 
-        $this->template->write_view('contentmodule1', "petty_cash/request_cashadvance", $data);
+        $this->template->write_view('contentmodule1', "petty_cash/request_cashadvance2", $data);
 
         $this->template->parse_template = TRUE;
 
